@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafka Partitions Sizing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kafka Partitions Sizing Calculator</h1>
+        <label for="throughput">Throughput:</label>
+        <input type="number" id="throughput" required>
+        <label for="timeUnit">Time Unit:</label>
+        <select id="timeUnit">
+            <option value="seconds">Seconds</option>
+            <option value="minutes">Minutes</option>
+            <option value="hours">Hours</option>
+            <option value="days">Days</option>
+        </select>
+        <label for="processingTime">Processing Time (ms):</label>
+        <input type="number" id="processingTime" required>
+        <button id="calculateButton">Calculate</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
